@@ -1,0 +1,40 @@
+export const projects = [
+  {
+    slug: 'providerhub',
+    name: 'ProviderHub',
+    kind: 'dashboard',
+    discipline: 'Full-stack / Publisher platform',
+    title: 'Share a link. Track the traffic.',
+    intro: 'A web-based publisher monetization platform. Publishers create monetized short links, share them through Telegram bots and follow the traffic those links bring in.',
+    challenge: 'Publishers need one place to manage their links, distribute content to an audience and see how it performs. Doing this by hand across channels is slow, and without tracking there is no way to connect views to earnings.',
+    approach: [
+      'Built publisher registration, authentication and a personal dashboard for managing links.',
+      'Added monetized URL shortening, with Telegram bot integration that converts links automatically so publishers can share them with subscribers.',
+      'Built the redirect flow: an intermediate landing page that leads to the destination or an app download, with click and traffic tracking.',
+      'Added a CPM-based model with revenue and performance monitoring for each publisher.',
+    ],
+    tools: ['Telegram Bot'],
+    takeaway: 'A monetization platform is only as good as its flow. The link, the redirect page and the tracking have to work as one, and automating the conversion in Telegram removes manual work for the publisher.',
+    url: 'https://webmaster.provider-hub.com/',
+        logo: '/images/providerhub/logo.png',
+  },
+
+    {
+    slug: 'cheapsystem',
+    name: 'CheapSystem',
+    kind: 'architecture',
+    discipline: 'Frontend / Interactive tool',
+    title: 'Draw the architecture. Run it.',
+    intro: 'An interactive, web-based system design simulator. Developers drag infrastructure components onto a canvas, connect them, set capacity and replicas, and run the design to see how it behaves.',
+    challenge: 'System design is hard to learn from static diagrams. Without a way to experiment, it is difficult to see how traffic spreads across a load balancer, or how replicas change what a system can handle.',
+    approach: [
+      'Built a drag-and-drop canvas for adding and connecting infrastructure components such as CDN, API Gateway and Load Balancer.',
+      'Added per-component settings for traffic capacity, replicas and instances, with the effective system capacity visualised.',
+      'Added design tools for structure: drawing, text annotations, and customizable frames, borders and colours.',
+      'Added a Run mode to simulate the design, plus zoom, undo, redo and canvas navigation controls.',
+    ],
+    tools: ['Drag & drop', 'Simulation'],
+    takeaway: 'System design sticks when you can change a number and see the result. Making capacity, replicas and traffic visible turns abstract architecture into something you can experiment with.',
+    url: 'https://cheapsystem.run.place/',
+  },
+]
