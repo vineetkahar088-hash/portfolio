@@ -6,6 +6,7 @@ import react from '@astrojs/react'
 // Static output (dist/) — deploys as-is to Vercel, Netlify, Cloudflare Pages, GitHub Pages, etc.
 // Set `site` to the production URL once the domain is known (used for canonical/OG URLs).
 export default defineConfig({
+    site: 'https://vineet-kahar.vercel.app',
   output: 'static',
   integrations: [react()],
   vite: {
